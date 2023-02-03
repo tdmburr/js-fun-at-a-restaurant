@@ -7,7 +7,7 @@ function takeOrder(order, delivery) {
 function refundOrder(orderNumber, delivery) {
   for(var i = 0; i < delivery.length; i++) {
     if(orderNumber === delivery[i].orderNumber) {
-      return delivery.splice(i, 1)
+    return delivery.splice(i, 1)
     }
   }
 }
@@ -15,9 +15,9 @@ function refundOrder(orderNumber, delivery) {
 function listItems(deliveryOrders) {
   var order = []
   for (var i = 0; i < deliveryOrders.length; i++) {
-    order.push(deliveryOrders[i].item)
+  order.push(deliveryOrders[i].item)
   }
-    return order.join(", ")
+  return order.join(", ")
 }
 
 function searchOrder(order, food) {
